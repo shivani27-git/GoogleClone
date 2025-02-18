@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Google</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+            padding: 100px;
+            background-image: url(bg.png);
+            background-size: cover;
+
+
+
+        }
+
+        .center {
+            width: 70%;
+            height: 500px;
+            /* background-color: rgb(165, 158, 158); */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 20px;
+
+        }
+
+        i {
+            color: rgb(89, 85, 85);
+            font-size: 20px;
+            padding: 10px;
+            gap: 10px;
+        }
+
+        .inputgrp {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            width: 80%;
+            height: 10 px;
+            /* padding: 10px; */
+            border-radius:50px;
+            margin-top: 20px;
+
+        }
+
+        .text {
+            font-size: 20px;
+            outline: none;
+            border: none;
+            padding: 10px;
+            width: 600px;
+            height: 20px;
+        }
+
+        .fav {
+            /* background-color: white; */
+            width: 120px;
+            height: 120px;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            /* border: 1px solid black; */
+            cursor: pointer;
+            border-radius: 5px;
+
+        }
+        .fav:hover{
+            background-color: rgba(255, 255, 255, 0.534);
+            .dots{
+                opacity: 1;
+            }
+
+        }
+
+        .circle {
+            /* background-color: brown; */
+            width: 60%;
+            height: 60%;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* flex-direction: column; */
+            margin-bottom: 10px;
+            
+        }
+        .parent{
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            gap:10px;
+            margin-top:30px;
+            
+        }
+        .insta{
+            width:100%;
+            border-radius: 50%;
+
+
+        }
+        .dots{
+            color: white;
+            position: relative;
+            left:40px;
+           /* font-size: small;  */
+           opacity: 0;
+           transition: 0.4s all ease;
+        }
+        .top-right{
+            width: 200px;
+            height: 50px;
+            position: fixed;
+            font-size: 20px;
+            gap:10px;
+            top:10px;
+            right: 10px;
+            display: flex;
+            justify-content:space-evenly;
+            align-items: center;
+            cursor: pointer;
+        }
+        .grid{
+            width:20px;
+            height:20px;
+            color: rgb(196, 191, 191);
+            cursor: pointer;
+        }
+        .grid:hover{
+            background-color:rgba(0, 0, 0, 0);
+            width: 30px;
+            height: 30px;
+
+
+        }
+        .im{
+            width:30px;
+            height: 30px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .twit{
+            width:100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+        .para{
+            margin-bottom:10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="center">
+            <img src="./google.png" width="30%" style="margin-bottom:10px;">
+            <div class="inputgrp">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <form action="https://google.com/search">
+                    <input type="text" class="text" placeholder="Search Google or type a url" name="q">
+                </form>
+                <i class="fa-solid fa-microphone"></i>
+                <i class="fa-solid fa-camera"></i>
+            </div>
+            <div class="parent">
+                <div class="fav">
+                    <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                    <div class="circle">
+                        <img src="./insta.png" class="insta" alt="">
+    
+                    </div>
+                    <p1 style="color: white;"class="para">Instagram </p1>
+            </div>
+                <div class="fav">
+                    <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                    <div class="circle">
+                        <img src="./yt.png" class="insta" alt="">
+    
+                    </div>
+                    <p1 style="color: white;" class="para">youtube </p1>
+    
+            </div>
+                <div class="fav">
+                    <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                    <div class="circle">
+                        <img src="./discord.png" class="insta" alt="">
+    
+                    </div>
+                    <p1 style="color: white;" class="para">discord </p1>
+      
+            </div>
+                <div class="fav">
+                    <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                    <div class="circle">
+                        <img src="./reddit.png" class="twit" alt="">
+    
+                    </div>
+                    <p1 style="color: white;" class="para">Reddit </p1>
+    
+               </div>
+               <div class="fav">
+                <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                <div class="circle">
+                    <img src="./whatsapp.png" class="insta" alt="">
+
+                </div>
+                <p1 style="color: white;" class="para">Whatsapp </p1>
+                </div>
+            <div class="fav">
+                <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                <div class="circle">
+                    <img src="./chatgpt.png" class="insta" alt="">
+
+                </div>
+                <p1 style="color: white;" class="para">chatgpt </p1>
+           
+        </div>
+                
+        </div>
+        <div class="top-right">
+            <p style="font-size: 15px;">Gmail</p>
+            <p style="font-size: 15px;">Images</p>
+        <img src="./grid.png" alt="grid" class="grid" srcset="">
+        <img src="./im.png" alt="" class="im" srcset="">
+  
+        </div>
+    </div>
+</body>
+
+
+</html>
